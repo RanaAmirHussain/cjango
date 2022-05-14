@@ -1,4 +1,4 @@
-
+/* 
 
 :root{
     --primary-color:rgb(8, 8, 187) ;
@@ -17,4 +17,65 @@ color: aquamarine;
       
     height: 30px;
     cursor: pointer;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
 }
+#icon{
+    
+    height: 30px;
+    width: 50px;
+    left: 49%;
+    top: 100%;
+    position: absolute;
+    
+}
+
+.mama{
+    background-color: aqua;
+    font: bold;
+    right: 39%;
+    position: absolute;
+}
+
+.hero{
+
+    height: 80vh;
+    width: 100%;
+    background:var(--secondary-color);
+    font-family: sans-serif;
+    position: top;
+}
+nav ul{
+flex: 1;
+text-align: center;
+
+}
+:root{
+    --primary-color:rgb(8, 8, 187) ;
+    --secondary-color:rgb(20, 189, 48) ;}
+   
+ 
+
+.dark-theme{
+    --primary-color:rgb(230, 24, 24) ;
+    --secondary-color:rgb(207, 226, 120) ;
+
+}
+
+.strong{ background-color:var(--primary-color); 
+    height: 40vh;
+    width: 100%;    
+    font-family: sans-serif;
+    position: top;
+    
+} 
+
+.foo[style*="color: red"] {
+    color: firebrick !important;
+  }
+  
+
+  

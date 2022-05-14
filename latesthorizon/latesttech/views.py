@@ -8,12 +8,10 @@ from . import views
 
 
 def home(request):
-
-
     if request.method == "POST":
-       form = Imageform(request.POST , request.FILES)
+       form = Imageform(request.POST,request.FILES)
        if form.is_valid():
            form.save()
            form = Imageform()
-           img = Image.objects.all    
-    return render(request,"home1.html",{'img':img,'form':form} )
+           img = Image.objects.all()    
+    return render(request,"latesttech/home1.html",{'img':img,'form':form})

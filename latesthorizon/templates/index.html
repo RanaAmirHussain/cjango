@@ -41,14 +41,13 @@
 <div style="background-color: rgb(0, 255, 115);" class="container">
     <div class="py-5 text-center bg-secondary text-white">
         <h1 class="mb-3">upload image</h1>
-        <form action="/admin/" method="POST" enctype="multipart/form-data">
-        {% csrf_token %}          
-            
+        <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}  
+        {{form}}        
             <input style="background-color: rgb(0, 183, 255);" type="submit" class="btn btn-info" value="upload">
             <div style="background-color: rgb(0, 183, 255);">
-            <label class="required" for="id_photo">Photo:</label>
-    
-            <input  type="file" name="photo" accept="image/*" required="" id="id_photo">
+            <label class="required" for="photo">Photo:</label>    
+            <input  type="file" name="photo" accept="image/*" id="photo">
         </div>
         
         </form>

@@ -7,4 +7,4 @@ admin.site.register(School)
 
 @admin.register(Image)
 class Imageadmin(admin.ModelAdmin):
-    list=display=['id','photo','date']
+    list_display=['id','photo','date']
