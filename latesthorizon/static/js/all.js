@@ -1,0 +1,3 @@
+function disp() {
+alert ("BAIA THORRA DIAN SE ZERA Q K YE RABEES SIR KI WEBSITE HE NA");
+}

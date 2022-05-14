@@ -1,0 +1,103 @@
+
+
+
+
+
+ <!DOCTYPE html> {% load static %}
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>home page</title>
+
+</head>
+
+
+<body>
+    <body>
+        <h1>!!! slider animation !!!</h1>
+        <div class="maindiv "></div>
+    </body>
+    <style>
+        body {
+            background-color:plum
+        }
+        
+        
+        h1 {
+            font-size: 2rem;
+            font-style: italic;
+            line-height: 0.4;
+            letter-spacing: 1.5rem;
+            text-align: center;
+            color:darksalmon;
+            margin-top: 50px;
+        }
+        
+        .maindiv {
+            width: 1265px;
+            height: 600px;
+            position: center;
+            transform: translate(-50% -50%);
+            background-size: 100% 100%;
+            border: rgb(235, 8, 8);
+            box-shadow: 5px 25px 35px 35px rgb(10, 236, 161);
+            animation: slider 30s infinite linear;
+        }
+        
+        @keyframes slider {
+            0% {
+                background-image: url("{% get_static_prefix %}image/20.JPG");
+            }
+            
+            10% {
+                background-image: url('{% static "image/7.jpg" %}');
+            }
+            20% {
+                background-image: url("{% get_static_prefix %}image/1.JPG");
+            }
+            30% {
+                background-image: url('{% static "image/12.jpg" %}');
+            }
+            40% {
+                background-image: url("{% get_static_prefix %}image/3.JPG");
+            }
+            50% {
+                background-image: url("{% get_static_prefix %}image/26.JPG");
+            }
+            55% {
+                background-image: url('{% static "image/8.jpg" %}');
+            }
+            60% {
+                background-image: url("{% get_static_prefix %}image/17.JPG");
+            }            
+            70% {
+                background-image: url('{% static "image/21.jpg" %}');
+            }
+            80% {
+                background-image: url('{% static "image/4.jpg" %}');
+            }       
+            90% {
+                background-image: url('{% static "image/2.jpg" %}');
+            }
+            100% {
+                background-image: url('{% static "image/15.jpg" %}');
+            }
+
+            
+        }
+    </style>
+   
+   <H1 >!!!'WELCOME WELCOME'!!!</H1>
+    <H2>MY FRIENDS  ONLY YOU CAN SEE MY EFFORTS</H2> 
+  <H1> 😁💕😃✨✨👌👍🙌😍💖👏👏✨✨</H1> <audio controls src="/static/audio/2.mp3"> music</audio><br>
+  
+
+   
+</body>
+
+</html>

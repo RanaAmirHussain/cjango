@@ -1,0 +1,61 @@
+
+
+
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base page</title>
+</head>
+<body bgcolor="tomato">
+   <h1> this is my funny  page with of adeema images</h1>
+
+
+   
+   
+</body>
+</html>
+<div class="container">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            
+            
+            <div class="carousel-item">
+                <img style="height: 1150px; width: 1253px;" src="/static/image/3.JPG" class="d-block w-100" alt="adeema funny">
+                <img style="height: 1150px; width: 1253px;" src="/static/image/26.JPG" class="d-block w-100" alt="adeema funny">
+            </div>
+            
+            
+           
+        </div>
+    </div>
+</div>
+
+
+<form method="post" action="/contact/" >
+    {% csrf_token %}
+    <textarea style="background-color: yellow" name="text" id="text" cols="80" rows="10" style="height: 112px; width: 744px;"></textarea>
+    <br>
+    <input  type="checkbox" name="remove_punc"> <big><big>REMOVE PUNCUTATION</big></big>
+    <br>
+    <input style="background-color:deepskyblue"  type="checkbox" > <big><big>UPPER CASE</big></big>
+    <br>
+
+    <br>
+    
+    <button style="background-color: green" class="btn btn-danger" type="submit" style="background-color: brown;"><big><big>SUBMITT HERE</big></big> 
+    </button>
+</form>
+
+
+ 
+</html>
+
+
+</body>
+

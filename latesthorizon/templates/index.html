@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>index page</title>
+</head>
+<body bgcolor="darkolivegreen">
+
+   <H1 class="st">!!!'WELCOME WELCOME'!!!</H1>
+   <H2>MY FRIENDS  ONLY YOU CAN SEE MY EFFORTS</H2> 
+<H1> 😁💕😃✨✨👌<video style="background-color:grey;" width="1145px" height="900px" controls src="/static/video/1.mp4"></video>
+   
+   <h1 style="background-color: rgb(0, 255, 0);">👍🙌😍💖👏👏✨✨</H1>
+     
+     
+     <H1 > <video style="background-color: rgb(255, 0, 255);" width="1145px" height="900px" controls src="/static/video/2.mp4"></video>   
+      
+      <h1 style="background-color: rgb(255, 0, 55);">👍🙌😍💖👏👏✨✨😁💕😃✨✨👌</H1>
+        <br>
+        
+        <img  style="background-color: darkkhaki; height: 990px; width: 1153px;  " src='{% static "image/35.png" %}' alt="">
+      <br>
+      
+</body>
+</html>
+<h1 style="background-color: rgb(238, 255, 0);">👍🙌😍💖👏👏✨✨😁💕😃✨✨👌</H1>
+<hr />
+<form style="background-color: rgb(0, 195, 255);" action="">
+    <input type="button" value="touch me"style="background-color: rgb(922, 555, 10);"  onclick="disp()" />
+</form>
+<script src="{% static 'js/all.js' %}"></script>
+</body>
+<hr>
+
+
+<body>
+<div style="background-color: rgb(0, 255, 115);" class="container">
+    <div class="py-5 text-center bg-secondary text-white">
+        <h1 class="mb-3">upload image</h1>
+        <form action="/admin/" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}          
+            
+            <input style="background-color: rgb(0, 183, 255);" type="submit" class="btn btn-info" value="upload">
+            <div style="background-color: rgb(0, 183, 255);">
+            <label class="required" for="id_photo">Photo:</label>
+    
+            <input  type="file" name="photo" accept="image/*" required="" id="id_photo">
+        </div>
+        
+        </form>
+    </div>
+</div>
+</body>
+</body>
+<hr>
+
+<div>
+
+                 
+                             
+   
+
+
+
+
+
+
+
+   
