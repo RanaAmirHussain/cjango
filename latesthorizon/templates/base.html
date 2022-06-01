@@ -35,21 +35,36 @@
         </div>
     </div>
 </div>
-<form method="post" action="/contact/" >
+
+    
+           <h1>Welcome to the text analyzer. Enter your text below</h1>
+        <form method='POST' action='/analyze/' >
+            {% csrf_token %}
+            <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea><br>        
+            <input type="checkbox" id="removepunc" name="removepunc"> Remove Punctuations<br>
+            <input type="checkbox" id="fullcaps" name="fullcaps"> UPPERCASE<br>
+            <input type="checkbox" id="newlineremover" name="newlineremover"> New Line Remover<br>
+            <input type="checkbox" id="extraspaceremover" name="extraspaceremover"> Extra Spaces Remover<br>
+            <button type='submit'> Analyze Text</button>
+        
+        </form>
+        </body>
 
 
-    {% csrf_token %}
-    <textarea style="background-color: yellow" name="text" id="text" cols="80" rows="10" style="height: 112px; width: 744px;"></textarea>
+
+    {% comment %} <textarea style="background-color: yellow" name="text" id="text" cols="80" rows="10" style="height: 112px; width: 744px;"></textarea>
     <br>
-    <input  type="checkbox" name="remove_punc"> <big><big>REMOVE PUNCUTATION</big></big>
+    <input  type="checkbox" name="rpu" id="rpu" > <big><big>REMOVE PUNCUTATION</big></big>
     <br>
-    <input style="background-color:deepskyblue"  type="checkbox" > <big><big>UPPER CASE</big></big>
+    <input style="background-color:deepskyblue" name="upper" id="upper"  type="checkbox" > <big><big>UPPER CASE</big></big>
     <br>
 
     <br>
     
     <button style="background-color: green" class="btn btn-danger" type="submit" style="background-color: brown;"><big><big>SUBMITT HERE</big></big> 
-    </button>
+    </button> {% endcomment %}
+
+
 </form>
 
 

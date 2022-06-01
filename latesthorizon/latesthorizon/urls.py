@@ -31,6 +31,7 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
+    path('fonts/',views.fonts,name='fonts'),
     path('index/',views.index,name='index'),
     path('uploader/',views.uploader,name='uploader'),
     path('about/',views.about,name='about'),
@@ -38,6 +39,7 @@ urlpatterns = [
     path('services/',views.services,name='services'),
     path('base/',views.base,name='base'),
     path('info/',views.info,name='info'),
+    path('analyze/',views.analyze,name='analyze'),
     path('latesttech/',include('latesttech.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
